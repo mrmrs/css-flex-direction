@@ -25,7 +25,7 @@ or download the css on github and include in your project.
 .fd-colrev {  flex-direction: column-reverse; }
 .fd-i {       flex-direction: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .fd-row-ns {     flex-direction: row; }
   .fd-rev-ns {     flex-direction: row-reverse; }
   .fd-col-ns {     flex-direction: column; }
@@ -33,7 +33,7 @@ or download the css on github and include in your project.
   .fd-i-ns {       flex-direction: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .fd-row-m {     flex-direction: row; }
   .fd-rev-m {     flex-direction: row-reverse; }
   .fd-col-m {     flex-direction: column; }
@@ -41,7 +41,7 @@ or download the css on github and include in your project.
   .fd-i-m {       flex-direction: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .fd-row-l {     flex-direction: row; }
   .fd-rev-l {     flex-direction: row-reverse; }
   .fd-col-l {     flex-direction: column; }
