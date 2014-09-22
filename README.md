@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-flex-direction)
 ## File Size
 
 1.1K flex-direction.css
-817B flex-direction.min.css
+817B flex-direction.min.css 
+201B minified and gzipped
 
 ## The Code
 ```
