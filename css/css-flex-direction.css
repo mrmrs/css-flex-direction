@@ -1,30 +1,30 @@
 /*
    FLEX DIRECTION
 */
-.fd-row { flex-direction: row; }
-.fd-rev { flex-direction: row-reverse; }
-.fd-col { flex-direction: column; }
-.fd-colrev { flex-direction: column-reverse; }
-.fd-i { flex-direction: inherit; }
+.fd-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+.fd-rev { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+.fd-col { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.fd-colrev { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+.fd-i { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 @media screen and (min-width: 48em) {
- .fd-row-ns { flex-direction: row; }
- .fd-rev-ns { flex-direction: row-reverse; }
- .fd-col-ns { flex-direction: column; }
- .fd-colrev-ns { flex-direction: column-reverse; }
- .fd-i-ns { flex-direction: inherit; }
+ .fd-row-ns { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+ .fd-rev-ns { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .fd-col-ns { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .fd-colrev-ns { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .fd-i-ns { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .fd-row-m { flex-direction: row; }
- .fd-rev-m { flex-direction: row-reverse; }
- .fd-col-m { flex-direction: column; }
- .fd-colrev-m { flex-direction: column-reverse; }
- .fd-i-m { flex-direction: inherit; }
+ .fd-row-m { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+ .fd-rev-m { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .fd-col-m { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .fd-colrev-m { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .fd-i-m { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 }
 @media screen and (min-width: 64em) {
- .fd-row-l { flex-direction: row; }
- .fd-rev-l { flex-direction: row-reverse; }
- .fd-col-l { flex-direction: column; }
- .fd-colrev-l { flex-direction: column-reverse; }
- .fd-i-l { flex-direction: inherit; }
+ .fd-row-l { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+ .fd-rev-l { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .fd-col-l { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .fd-colrev-l { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .fd-i-l { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 }
 

@@ -1,10 +1,10 @@
-# css-flex-direction 0.0.7
+# css-flex-direction 1.0.6
 
 Css module of single purpose classes for flex direction
 
 #### Stats
 
-235 | 20 | 20
+319 | 20 | 80
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-flex-direction
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-flex-direction
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-flex-direction.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-flex-direction";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-flex-direction@1.0.6/css/css-flex-direction.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,40 +68,40 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    FLEX DIRECTION
 */
-.fd-row { flex-direction: row; }
-.fd-rev { flex-direction: row-reverse; }
-.fd-col { flex-direction: column; }
-.fd-colrev { flex-direction: column-reverse; }
-.fd-i { flex-direction: inherit; }
+.fd-row { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+.fd-rev { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+.fd-col { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.fd-colrev { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+.fd-i { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 @media screen and (min-width: 48em) {
- .fd-row-ns { flex-direction: row; }
- .fd-rev-ns { flex-direction: row-reverse; }
- .fd-col-ns { flex-direction: column; }
- .fd-colrev-ns { flex-direction: column-reverse; }
- .fd-i-ns { flex-direction: inherit; }
+ .fd-row-ns { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+ .fd-rev-ns { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .fd-col-ns { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .fd-colrev-ns { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .fd-i-ns { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .fd-row-m { flex-direction: row; }
- .fd-rev-m { flex-direction: row-reverse; }
- .fd-col-m { flex-direction: column; }
- .fd-colrev-m { flex-direction: column-reverse; }
- .fd-i-m { flex-direction: inherit; }
+ .fd-row-m { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+ .fd-rev-m { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .fd-col-m { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .fd-colrev-m { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .fd-i-m { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 }
 @media screen and (min-width: 64em) {
- .fd-row-l { flex-direction: row; }
- .fd-rev-l { flex-direction: row-reverse; }
- .fd-col-l { flex-direction: column; }
- .fd-colrev-l { flex-direction: column-reverse; }
- .fd-i-l { flex-direction: inherit; }
+ .fd-row-l { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+ .fd-rev-l { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+ .fd-col-l { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+ .fd-colrev-l { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .fd-i-l { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: inherit; flex-direction: inherit; }
 }
 ```
 
@@ -103,3 +121,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
