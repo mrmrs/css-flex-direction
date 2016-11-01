@@ -1,7 +1,7 @@
 {
   "name": "css-flex-direction",
   "style": "flex-direction.css",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "http://github.com/mrmrs/css-flex-direction",
   "description": "Css module of single purpose classes for flex direction",
   "keywords": [
