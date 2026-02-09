@@ -1,38 +1,44 @@
 {
   "name": "css-flex-direction",
-  "style": "flex-direction.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-flex-direction",
-  "description": "Css module of single purpose classes for flex direction",
+  "version": "2.0.0",
+  "description": "Functional CSS for flex-direction",
+  "style": "dist/flex-direction.css",
+  "main": "dist/flex-direction.css",
+  "exports": {
+    ".": "./dist/flex-direction.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "flex-direction"
+    "flex-direction",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-flex-direction": {
+  "homepage": "https://github.com/mrmrs/css-flex-direction",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-flex-direction.git"
+    "url": "https://github.com/mrmrs/css-flex-direction.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-flex-direction/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-flex-direction/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
