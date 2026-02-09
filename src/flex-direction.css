@@ -8,7 +8,7 @@
 .fd-colrev {  flex-direction: column-reverse; }
 .fd-i {       flex-direction: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .fd-row-s {     flex-direction: row; }
   .fd-rev-s {     flex-direction: row-reverse; }
   .fd-col-s {     flex-direction: column; }
@@ -16,7 +16,7 @@
   .fd-i-s {       flex-direction: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .fd-row-m {     flex-direction: row; }
   .fd-rev-m {     flex-direction: row-reverse; }
   .fd-col-m {     flex-direction: column; }
@@ -24,7 +24,7 @@
   .fd-i-m {       flex-direction: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .fd-row-l {     flex-direction: row; }
   .fd-rev-l {     flex-direction: row-reverse; }
   .fd-col-l {     flex-direction: column; }
