@@ -6,8 +6,8 @@ Functional CSS for flex-direction
 
 | File | Size |
 |------|------|
-| `dist/flex-direction.css` | 1301 bytes |
-| `dist/flex-direction.min.css` | 1017 bytes (197 Gzipped) |
+| `dist/flex-direction.css` | 1061 bytes |
+| `dist/flex-direction.min.css` | 777 bytes (191 Gzipped) |
 
 ## Install
 
@@ -39,26 +39,26 @@ npm install css-flex-direction
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.direction-row` | `flex-direction: row;` |
-| `.direction-row-reverse` | `flex-direction: row-reverse;` |
-| `.direction-column` | `flex-direction: column;` |
-| `.direction-column-reverse` | `flex-direction: column-reverse;` |
-| `.direction-inherit` | `flex-direction: inherit;` |
-| `.direction-row-s` | `flex-direction: row;` |
-| `.direction-row-reverse-s` | `flex-direction: row-reverse;` |
-| `.direction-column-s` | `flex-direction: column;` |
-| `.direction-column-reverse-s` | `flex-direction: column-reverse;` |
-| `.direction-inherit-s` | `flex-direction: inherit;` |
-| `.direction-row-m` | `flex-direction: row;` |
-| `.direction-row-reverse-m` | `flex-direction: row-reverse;` |
-| `.direction-column-m` | `flex-direction: column;` |
-| `.direction-column-reverse-m` | `flex-direction: column-reverse;` |
-| `.direction-inherit-m` | `flex-direction: inherit;` |
-| `.direction-row-l` | `flex-direction: row;` |
-| `.direction-row-reverse-l` | `flex-direction: row-reverse;` |
-| `.direction-column-l` | `flex-direction: column;` |
-| `.direction-column-reverse-l` | `flex-direction: column-reverse;` |
-| `.direction-inherit-l` | `flex-direction: inherit;` |
+| `.fd-row` | `flex-direction: row;` |
+| `.fd-rev` | `flex-direction: row-reverse;` |
+| `.fd-col` | `flex-direction: column;` |
+| `.fd-colrev` | `flex-direction: column-reverse;` |
+| `.fd-i` | `flex-direction: inherit;` |
+| `.fd-row-s` | `flex-direction: row;` |
+| `.fd-rev-s` | `flex-direction: row-reverse;` |
+| `.fd-col-s` | `flex-direction: column;` |
+| `.fd-colrev-s` | `flex-direction: column-reverse;` |
+| `.fd-i-s` | `flex-direction: inherit;` |
+| `.fd-row-m` | `flex-direction: row;` |
+| `.fd-rev-m` | `flex-direction: row-reverse;` |
+| `.fd-col-m` | `flex-direction: column;` |
+| `.fd-colrev-m` | `flex-direction: column-reverse;` |
+| `.fd-i-m` | `flex-direction: inherit;` |
+| `.fd-row-l` | `flex-direction: row;` |
+| `.fd-rev-l` | `flex-direction: row-reverse;` |
+| `.fd-col-l` | `flex-direction: column;` |
+| `.fd-colrev-l` | `flex-direction: column-reverse;` |
+| `.fd-i-l` | `flex-direction: inherit;` |
 
 ### Responsive
 
@@ -70,7 +70,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.direction-row-m` applies the property at the medium breakpoint and above.
+Example: `.fd-row-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
